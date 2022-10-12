@@ -10,7 +10,7 @@ pip install discord
 pip install pyautogui
 ```
 
-If you get an error, be sure that you have installed Python 3.10 and pip.
+If you get an error, make sure that you have installed Python 3.10 and pip.
 
 ## Setup
 Open DiscordRemoteScreenshotTaker.py with a Python IDE and change the token variable to your discord's bot token.
@@ -23,5 +23,6 @@ Save the file and run it with the IDE, go to discord and type !screenshot.
 
 ## Notes
 - Made only for educational purposes.
-- I am not responsible of any illegal activities you could possibly do with this program.
+- I am not responsible of any illegal activities you could possibly do with this program or with an edited version of it.
 - It does not have a native builder for .EXE files.
+- Use an IDE to run it. otherwise it won't work.
