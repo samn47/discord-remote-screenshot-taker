@@ -1,8 +1,7 @@
 #change the variable token to your discord bot token
 #type !screenshot in your discord server with the bot and see the magic XD
-#feel free to change the code as you want specially the discord bot settings
-
-token = "MTAyODIxNDI3MDkxMzE1MDk4Ng.G1J67B.yg3W28SFjBMdiCezKcK_bNLwi3c5Xs8_wXLZU4"
+#feel free to change the code as you want.
+token = "change me"
 
 
 #code
@@ -42,21 +41,13 @@ async def on_ready():
     
     
     
-    
-@client.command()
-async def screenshit(ctx):
-    await ctx.send("hmmmmm i like balls")
 
 
 @client.command()
 async def screenshot(ctx):
     screenshitting()
-    embed = discord.Embed(
-        title = "Screenshit",
-        description = "took a screenshit",
-        colour = discord.Colour.blue()  )
     file = discord.File(pathss, filename="screenshot.png")
-    await ctx.send(file=file, embed=embed)
+    await ctx.send(file=file)
     
     time.sleep(2)
     
