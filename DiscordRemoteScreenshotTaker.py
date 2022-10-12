@@ -1,9 +1,12 @@
-#change the variable token to your discord bot token, also change directoryname. it is the name of the directory
-#that will be used in %appdata% to store temporary screenshots. It will automatic create itself when deleted.
-#type !screenshot in your discord server with the bot and see the magic
-#feel free to change the code as you want.
+#change "token" to your discord bot token.
+#directoryname is the name of the folder the screenshot will be saved at.
+#prefix is the discord prefix used to perform the command.
+#directory will be located at roaming, inside appdata.
+#you can get to appdata running windows + R and typing appdata
+
 token = "change me"
 directoryname = "JavaUpdate"
+prefix = "!"
 
 #code
 
@@ -35,10 +38,10 @@ def screenshitting():
 
 
 
-client = commands.Bot(command_prefix = "!", case_insensitive = True, intents=discord.Intents.all())
+client = commands.Bot(command_prefix = prefix, case_insensitive = True, intents=discord.Intents.all())
 @client.event
 async def on_ready():
-    print('connected.')
+    print('connected and ready to use!')
     
     
     
