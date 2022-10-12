@@ -22,7 +22,8 @@ Save the file and run it with the IDE, go to discord and type !screenshot.
 
 
 ## Notes
-- Made only for educational purposes.
-- I am not responsible of any illegal activities you could possibly do with this program or with an edited version of it.
+- Made for educational purposes.
+- I am not responsible for any illegal uses of this program.
 - It does not have a native builder for .EXE files.
 - Use an IDE to run it. otherwise it won't work.
+- I just made this for fun. Feel free to use it in any (not illegal) way
