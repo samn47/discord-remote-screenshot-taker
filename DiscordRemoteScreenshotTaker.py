@@ -8,6 +8,9 @@ prefix = "!"
 #----------------------------------------------------------------------------------#
 
 #code
+
+
+
 #imports
 import discord
 from discord.ext import commands
@@ -37,7 +40,7 @@ client = commands.Bot(command_prefix = prefix, case_insensitive = True, intents=
 
 @client.event
 async def on_ready():
-    print(f'connected and ready to use as {bot.user}')    
+    print(f'connected and ready to use as {client.user}')    
     
 
 
@@ -48,9 +51,12 @@ async def screenshot(ctx):
     file = discord.File(pathss, filename="screenshot.png")
     await ctx.send(f'Succesfuly generated screenshot at path {pathss} at {currenttime}')
     await ctx.send(file=file)
+    print(f"Sent the screenshot succesfuly at {currenttime}.")
     
     time.sleep(2)
     
     os.remove(pathss)
     
 client.run(token)
+
+input()
