@@ -1,19 +1,13 @@
-#change "token" to your discord bot token.
-#directoryname is the name of the folder the screenshot will be saved at.
-#prefix is the discord prefix used to perform the command.
-#the directory will be located at roaming, inside appdata.
-#you can get to appdata running windows + R and typing appdata
+#configuration
 
 token = "change me"
 directoryname = "JavaUpdate"
 prefix = "!"
 
-#code
 
 #----------------------------------------------------------------------------------#
 
-
-
+#code
 #imports
 import discord
 from discord.ext import commands
