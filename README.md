@@ -16,7 +16,7 @@ I am not responsible for any malicious use of this program.
 Open CMD and type these commands:
 
 ```bash
-pip install discord.py
+pip install discord
 ```
 ```bash
 pip install pyautogui
