@@ -30,7 +30,6 @@ Save the file and run it with the IDE, go to discord and type !screenshot.
 ## Features
 - Remote screenshotting.
 - Deletes the file after sending it to your server.
-- 
 
 ## Notes
 
