@@ -24,13 +24,13 @@ pip install pyautogui
 If you get an error, make sure that you have installed Python 3.10 and pip.
 
 ## Setup
-Open DiscordRemoteScreenshotTaker.py with a Python IDE and change the token variable to your discord's bot token.
+Open DiscordRemoteScreenshotTaker.py with a Python IDE and change the configuration.  
 Save the file and run it with the IDE, go to discord and type !screenshot.
 
 ## Features
 - Remote screenshotting.
 - Deletes the file after sending it to your server.
-
+- 
 
 ## Notes
 
