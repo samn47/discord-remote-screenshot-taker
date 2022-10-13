@@ -9,7 +9,6 @@ I am not responsible for any malicious use of this program by
 
 - A computer
 - [Python 3.10](https://www.python.org) with pip
-- Any Python IDE
 - A discord bot
 - A discord server with the bot
 
@@ -21,17 +20,25 @@ pip install discord
 ```bash
 pip install pyautogui
 ```
-If you get an error, make sure that you have installed Python 3.10 and pip.
 
 ## Setup
-Open DiscordRemoteScreenshotTaker.py with a Python IDE and change the configuration.  
-Save the file and run it with the IDE, go to discord and type !screenshot.
+Open DiscordRemoteScreenshotTaker.py with any text editor and change the configuration.  
+Save the file and run it. go to discord and type your command.
 
 ## Features
 - Remote screenshotting.
 - Deletes the file after sending it to your server.
 
+## Troubleshooting
+
+- Python window closing quickly when i run the file.
+>make sure you installed the modules correctly. repeat the process in [requirements](##requirements).
+
+- Pip is not recognized as a internal or external command error
+>did you install python? by default pip is also installed with python.
+
 ## Notes
 
 - It does not have a native builder for .EXE files.
-- Use an IDE to run it. otherwise it won't work.
+
+[come back to the top](https://github.com/samn47/discord-remote-screenshot-taker#Discord-Remote-Screenshot-Taker)
