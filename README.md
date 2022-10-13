@@ -4,7 +4,7 @@ Instantly takes an image of your screen and sends it to your private discord bot
 
 This program was made for educational purposes.  
 The way you use it is your responsibility.  
-I am not responsible for any malicious use of this program by 
+I am not responsible for any malicious use of this program.
 
 ## Requirements
 
