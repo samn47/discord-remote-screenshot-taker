@@ -1,13 +1,14 @@
 # Discord Remote Screenshot Taker
-Takes an image of your screen and sends it to your private discord bot. All remotely!
+Instantly takes an image of your screen and sends it to your private discord bot. All remotely and super fast!
 ## Disclaimer
-This program was made for educational purposes.
-The way you use it is your responsibility.
-I am not responsible for any malicious use of this program or a edited version of it.
+This program was made for educational purposes.  
+The way you use it is your responsibility.  
+I am not responsible for any malicious use of this program by 
+
 ## Requirements
 
 - A computer
-- Python 3.10 with pip
+- [Python 3.10](https://www.python.org) with pip
 - Any Python IDE
 - A discord bot
 - A discord server with the bot
