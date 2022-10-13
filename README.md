@@ -16,7 +16,7 @@ I am not responsible for any malicious use of this program by
 Open CMD and type these commands:
 
 ```bash
-pip install discord
+pip install discord.py
 ```
 ```bash
 pip install pyautogui
