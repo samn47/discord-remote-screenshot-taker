@@ -32,7 +32,7 @@ Save the file and run it. go to discord and type your command.
 ## Troubleshooting
 
 - Python window closing quickly when i run the file.
->make sure you installed the modules correctly. repeat the process in [requirements](##Requirements).
+>make sure you installed the modules correctly. repeat the process in [requirements](#Requirements).
 
 - Pip is not recognized as a internal or external command error
 >did you install python? by default pip is also installed with python.
